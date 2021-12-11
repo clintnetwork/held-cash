@@ -1,0 +1,27 @@
+cargo-features = ["edition2021"]
+
+[package]
+name = "held-cash"
+version = "0.1.0"
+description = "High performance and distributed KV store w/ REST API."
+authors = ["Clint.Network <me@clint.network>"]
+keywords = ["solana", "smart-contract", "rust", "held-cash", "multisig", "vault"]
+repository = "https://github.com/clintnetwork/held-cash"
+readme = "https://github.com/clintnetwork/held-cash/blob/master/README.md"
+license = "https://github.com/clintnetwork/held-cash/master/LICENSE.md"
+edition = "2021"
+
+[dependencies]
+solana-program = "1.7.14"
+borsh = "0.9.1"
+borsh-derive = "0.9.1"
+
+[features]
+no-entrypoint = []
+
+[dev-dependencies]
+solana-program-test = "1.7.14"
+solana-sdk = "1.7.14"
+
+[lib]
+crate-type = ["cdylib", "lib"]
