@@ -1,4 +1,4 @@
-# 🏦 Held.cash (held-cash)
+# 🏦 Held.cash
 
 Multisig Vault & Escrow Program build on Solana, written in Rust 🦀
 
