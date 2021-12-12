@@ -7,7 +7,7 @@ struct VaultDetails {
     pub owner: Pubkey,
 
     // Multisig cosigners
-    pub cosigners: [Pubkey],
+    pub cosigners: [Pubkey; 2],
 
     // Number of required signatures
     pub requires: i32,
